@@ -1,2 +1,0 @@
-# rumiPopup
-modal window plugin
