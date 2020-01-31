@@ -3,10 +3,12 @@
 - jQuery Dialog를 보고 따라 만든 플러그인입니다.
 - 팝업이 되면 배경은 클릭을 할 수 없으며, 스크롤도 잠김니다.
 - 팝업이 해제되면 배경 클릭과 스크롤도 정상적으로 작동됩니다.
-- 초보가 만든 것이기 때문에 감안하고 사용하시기 바랍니다.
+- 초보가 만든 것이기 때문에 감안하고 사용하세요.
+
 
 ### DEMO
-[http://www.suu.kr/DEMO/rumipopup/rumiPopup.php][http://www.suu.kr/DEMO/rumipopup/rumiPopup.php]
+[http://www.suu.kr/DEMO/rumipopup/rumiPopup.php](http://www.suu.kr/DEMO/rumipopup/rumiPopup.php)
+
 
 ### 아래와 같이 작성합니다.
 
@@ -14,6 +16,7 @@
 <script src="http://.../jquery.rumiPopup.js"></script>
 <link rel="stylesheet" href="http://.../rumiPopup.css">
 ```
+
 
 ### GUNUBOARD 5.3 ~ 5.4 에서 사용시
 
@@ -24,6 +27,7 @@
 add_stylesheet('<link rel="stylesheet" href="'.G5_PLUGIN_URL.'/rumipopup/rumiPopup.css?ver='.G5_CSS_VER.'">', 0);
 add_javascript('<script src="'.G5_PLUGIN_URL.'/rumipopup/jquery.rumiPopup.js?ver='.G5_CSS_VER.'"></script>', 0);
 ```
+
 
 ### 기본코드
 ```javascript
