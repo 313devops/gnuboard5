@@ -9,7 +9,7 @@
 #rumipopup .rumiReload { display:inline-block; padding:0px; color:#999; position:absolute; bottom:9px; left:10px; font-weight:bold; cursor:pointer; }
 #rumipopup .rumiReload button { background:#555; }
 #rumipopup .noIframe { width:100%; height:100%; background:#fff; border:0px; display:none; overflow:auto; }
-#rumipopup .rumiIframe { height:100%; background:#fff; border:0px; padding:0px 0px 90px 20px; }
+#rumipopup .rumiIframe { height:100%; background:#fff; border:0px; padding:0px 0px 90px 20px !important; }
 #rumipopup .pop_inbox { width:100%; height:100%; padding:15px; background:#fff; overflow:auto; }
 #rumipopup .rumiButton { width:100%; height:50px; padding:10px 20px 0px 0px; position:absolute; bottom:0px; left:0px; text-align:right; font-size:12px; border-top:1px solid #ccc; background:#ededed; }
 #rumipopup button { padding:8px 12px; border:0px; border-radius:3px; color:#fff; background:#3059c7; margin-left:3px; outline:none; }
