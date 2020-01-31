@@ -1,14 +1,14 @@
 # rumiPopup
 - Modal Window Plugin
 
-#### 아래와 같이 작성합니다.
+### 아래와 같이 작성합니다.
 
 ```html
 <script src="http://.../jquery.rumiPopup.js"></script>
 <link rel="stylesheet" href="http://.../rumiPopup.css">
 ```
 
-#### GUNUBOARD 5.3 ~ 5.4 에서 사용시
+### GUNUBOARD 5.3 ~ 5.4 에서 사용시
 
 - `/plugin/rumipopup/`폴더에 파일을 복사합니다.
 - 적용하고자 하는 파일에 아래 코드를 삽입합니다.
