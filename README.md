@@ -14,8 +14,8 @@
 - 적용하고자 하는 파일에 아래 코드를 삽입합니다.
 
 ```php
-add_stylesheet("<link rel='stylesheet' href='".G5_PLUGIN_URL."/rumipopup/rumiPopup.css'>");
-add_javascript("<script src='".G5_PLUGIN_URL."/rumipopup/jquery.rumiPopup.js'></script>");
+add_stylesheet('<link rel="stylesheet" href="'.G5_PLUGIN_URL.'/rumipopup/rumiPopup.css?ver='.G5_CSS_VER.'">', 0);
+add_javascript('<script src="'.G5_PLUGIN_URL.'/rumipopup/jquery.rumiPopup.js?ver='.G5_CSS_VER.'"></script>', 0);
 ```
 
 ### 기본코드
@@ -47,6 +47,9 @@ rumiPopup.popup({
     }
 });
 ```
+
+
+### 옵션
 
 | 옵션 | 초기값 | 설명 |
 |:---:|:---:|:---|
