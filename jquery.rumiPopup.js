@@ -71,7 +71,6 @@ var rumiPopup = (function(){
 
         if(arr.height <= 100) {
             var H = arr.height+"%";
-            //var window_H = parseInt(window.getComputedStyle(document.body).height);
             var window_H = parseInt(window.innerHeight);
             var margin_top = (parseInt((window_H * (arr.height/100))/2) * -1);           
         } else {
@@ -85,8 +84,6 @@ var rumiPopup = (function(){
             el.Popup.css({"left":"0px", "top":"0px"});
             H = window.innerHeight+"px";
         }
-        //console.log(parseInt(window.getComputedStyle(document.body).height));
-        //console.log(margin_top);
 
         el.Popup.css({ "width" : W, "height" : H, "margin-left" : margin_left, "margin-top" : margin_top });
         
@@ -103,7 +100,6 @@ var rumiPopup = (function(){
         el.Pop_sub.show(); // 팝업이후 부모페이지 클릭 방지 레이어.
         popup_kind(arr.fadeIn); // 팝업 모션(fadeIn 또는 즉시.)
         
-
         if(arr.print==true) {
             print();
         }
@@ -130,24 +126,15 @@ var rumiPopup = (function(){
         }
 
         if(g5_is_mobile) {
-            //$(".rumiIframe").css({"padding":"0px 5px 90px 5px !important"});
             document.querySelector('.rumiIframe').style.padding = '0px 5px 90px 10px';
-           // console.log(g5_is_mobile);
         }
-    
-
     }
     
     var popup_kind = function(v) {
 
         top_height = $(document).scrollTop();
-        console.log(top_height);
-        // 부모창 스크롤 막기
-        //$('html, body').css({'overflow': 'hidden'});
         $('html').css({'height' : '100%', 'left' : '0px', 'top' : - top_height+"px"});
-        $('html').addClass("rumi_html_fixed"); //스크롤 락 해제
-
-        
+        $('html').addClass("rumi_html_fixed"); //스크롤 락
 
         if(v==true) {
             setTimeout(function(){
@@ -170,26 +157,20 @@ var rumiPopup = (function(){
         
         $("#"+el.FName).attr("src",""); // 프레임 src 초기화.
         
-        // 프레임 제거
-        //var frame = document.getElementById(el.FName), frameDoc = frame.contentDocument || frame.contentWindow.document;
-        //frame.parentNode.removeChild(frame);
-        
         el.Pop_sub.hide(); 
         el.Popup.hide();
     }
 
     var iframeReload = function() {
         document.getElementById(el.FName).contentDocument.location.reload(true);
-        //popup_msg("페이지를 새로고침하였습니다.");
     }
 
     var print = function(e) {
-        //console.log(arr);
+
     }
 
     // 레이어 팝업 하단에 사용자 버튼 생성. 
     var buttons = function(btn) {
-        // 버튼 생성.
         $.each(btn, function(index, item){
             el.Button.append("<button type='button' class='rumi_btn'>"+index+"</button>");
             $(".rumiButton button:contains('"+index+"')").click(item);
